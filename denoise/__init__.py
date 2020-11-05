@@ -1,6 +1,6 @@
 import numpy as np
 
-def denoise(x, top=0.1):
+def denoise(x, top=1/8):
   n = len(x)
   k = int(top*n)
   X = np.fft.fft(x)
